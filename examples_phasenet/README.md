@@ -1,1 +1,0 @@
-GitHub often has problems displaying Jupyter notebooks. Hence, we recommend to [look at our example notebooks here](https://nbviewer.jupyter.org/github/mpicbg-csbd/phasenet/tree/master/notebooks/).
