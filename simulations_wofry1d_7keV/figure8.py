@@ -17,7 +17,7 @@ from wofryimpl.propagator.propagators1D.integral import Integral1D
 from wofryimpl.propagator.propagators1D.fresnel_zoom import FresnelZoom1D
 from wofryimpl.propagator.propagators1D.fresnel_zoom_scaling_theorem import FresnelZoomScaling1D
 
-from srxraylib.plot.gol import plot, plot_image
+from srxraylib.plot.gol import plot, plot_image, plot_show
 plot_from_oe = 1000 # set to a large number to avoid plots
 
 
@@ -319,4 +319,8 @@ if __name__ == "__main__":
              W20[::10], W21[::10],
              legend=['true', 'large window',  'small window'],
              title='', xtitle=r'x [$\mu$m]', ytitle='intensity [arbitrary units]', xrange=[-3,3],
-             linestyle=[None, '--', ''], marker=[None,None,'x'])
+             linestyle=[None, '--', ''], marker=[None,None,'x'], show=0)
+
+        import matplotlib.pylab as plt
+        plt.savefig("figure8.pdf")
+        plot_show()

@@ -1,10 +1,10 @@
 import numpy
-
+import matplotlib.pyplot as plt
 # use testing_multimode_v23.py to create figure5.dat
 
 def inset_plot(epochs, val_acc_values, acc_values):
 
-    import matplotlib.pyplot as plt
+
     from mpl_toolkits.axes_grid.inset_locator import (inset_axes, InsetPosition,
                                                       mark_inset)
 
@@ -38,7 +38,6 @@ def inset_plot(epochs, val_acc_values, acc_values):
     ax2.plot(epochs[::10], val_acc_values[::10])
     ax2.plot(epochs[::10], acc_values[::10])
 
-    plt.show()
 
 if __name__ == "__main__":
 
@@ -52,3 +51,5 @@ if __name__ == "__main__":
 
     inset_plot(epochs, val_acc_values, acc_values)
 
+    plt.savefig("figure5.pdf")
+    plt.show()
