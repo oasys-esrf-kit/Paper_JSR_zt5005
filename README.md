@@ -5,7 +5,11 @@ Files and OASYS workspaces related to the paper:
 
 ## X-ray lens figure errors retrieved by deep learning from several beam intensity images
 
-J. Synchrotron Rad. (Submitted).
+Sanchez del Rio, M., Celestre, R. and Reyes-Herrera, J.
+
+J. Synchrotron Rad. 31, 1001-1009 (2004)
+
+https://doi.org/10.1107/S1600577524004958
 
 
 ## OASYS workspace
